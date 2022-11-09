@@ -5,9 +5,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <style>
+        #nav{
+            background-color: rgb(18, 211, 241);
+            height: auto;
+            border: 3px solid rgb(218, 32, 54);
+        }
+        .nav_subdiv{
+            width: auto;
+            border: 0px solid black;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+        }
+        #div1, #div2{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .nav_subdiv>img{
+            width: 20%;
+            padding-right: 5px;
+        }
+        .nav_subdiv>button, #div2>div>button{
+            background-color:  rgb(18, 211, 241);
+            border: 0px;
+            color: white;
+            font-size: medium;
+        }
+        .nav_subdiv>button:hover, #div2>div>button:hover{
+            cursor: pointer;
+        }
+        #div2{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        #div2>div{
+            width: auto;
+            border: 0px solid black;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #div2>div>img{
+            width: 20%;
+            padding-right: 5px;
+        }
+
+        #product_div{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 10px;
+        }
+        #product_div>a>button{
+            background-color: white;
+            border: 0px;
+        }
+
+        #product_div>a>button:hover{
+            cursor: pointer;
+        }
+
+        #adv_img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        #adv_img:hover{
+            cursor: pointer;
+        }
+        #payment{
+            display: flex;
+            justify-content: left;
+            padding: 10px;
+            margin-left: 3% ;
+        }
+        #payment>div{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+            width: 30%;
+            margin-right: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="nav"></div>
+    </div>
 </body>
 </html>
+
+<script>
+
+// creating 1st half of nav bar
+
+    let div1 = document.createElement("div");
+    document.querySelector("#nav").append(div1);
+    div1.id = "div1";
+
+    let logo = document.createElement("img");
+    logo.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    logo.setAttribute("alt", "company logo");
+    div1.append(logo);
+    logo.style.width = "5%";
+
+    let search = document.createElement("input");
+    search.style.width = "400px";
+    search.style.padding = "20px";
+    search.setAttribute("placeholder", "... Search for medicine and wellness products");
+    search.style.fontSize = "20px";
+    search.style.borderRadius = "5px";
+    div1.append(search);
+
+    let upload_div = document.createElement("div");
+    upload_div.className = "nav_subdiv";
+    let upload_img = document.createElement("img");
+    upload_img.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    let upload_button = document.createElement("button");
+    upload_button.innerText = "Upload";
+    upload_div.append(upload_img, upload_button);
+
+
+    let cart_div = document.createElement("div");
+    cart_div.className = "nav_subdiv";
+    let cart_img = document.createElement("img");
+    cart_img.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    let cart_button = document.createElement("button");
+    cart_button.innerText = "Cart";
+    cart_div.append(cart_img, cart_button);
+
+    let signin_div = document.createElement("div");
+    signin_div.className = "nav_subdiv";
+    let signin_img = document.createElement("img");
+    signin_img.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    let signin_button = document.createElement("button");
+    signin_button.innerText = "Sign in / Sign up";
+    signin_div.append(signin_img, signin_button);
+    div1.append(upload_div, cart_div, signin_div);
+
+    let random = document.createElement("div");
+    div1.append(random);
+
+
+    // creating 2nd sub div in nav bar
+
+    let div2 = document.createElement("div");
+    document.querySelector("#nav").append(div2);
+    div2.id = "div2";
+
+    let arr = [{img_id : "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg", button_name: "Medicine"},
+    {img_id : "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg", button_name: "Wellness"},
+    {img_id : "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg", button_name: "Lab Tests"},
+    {img_id : "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg", button_name: "Beauty"},
+    {img_id : "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg", button_name: "Health Care"}
+]
+
+function sub_div2(arr){
+    arr.forEach((item) => {
+        let subdiv2 = document.createElement("div");
+        div2.append(subdiv2);
+        let img = document.createElement("img");
+        img.setAttribute("src", item.img_id);
+        subdiv2.append(img);
+        let button = document.createElement("button");
+        button.innerText = item.button_name;
+        subdiv2.append(button);        
+    });
+} 
+sub_div2(arr);
+
+// products div
+
+let products_list = ["COVID Essentials","Diabetes","Eyewear","Ayush","Ayurvedic","Homeopathy","Fitness","Mom & Baby","Devices","Surgicals","Sexual Wellness","Treatments"];
+
+let product_div = document.createElement("div");
+product_div.id = "product_div";
+document.querySelector("#container").append(product_div);
+
+function product_div1(arr){
+    arr.forEach((item) => {
+    let link = document.createElement("a");
+    link.setAttribute("href", "./products.html");
+    let button = document.createElement("button");
+    button.innerText = item;
+    product_div.append(link);
+    link.append(button);
+    // button.addEventListener("click", function (){
+    //     location.href = './products.html';
+    //     button.setAttribute("target", "blank");
+    //     })
+     })
+}
+
+product_div1(products_list);
+
+
+// creating advertise image
+
+let adv_img = document.createElement("div");
+    document.querySelector("#container").append(adv_img);
+    adv_img.id = "adv_img";
+
+    let adv_logo = document.createElement("img");
+    adv_logo.setAttribute("src", "https://www.netmeds.com/images/cms/offers/1627962096_Mobile_Push.jpg");
+    adv_logo.setAttribute("alt", "adv_img");
+    adv_img.append(adv_logo);
+    adv_logo.style.width = "75%";
+    adv_logo.style.height = "250px";
+
+
+// creating payment partners and offers
+
+let pay_des = document.createElement("h2");
+document.querySelector("#container").append(pay_des);
+pay_des.innerText = "Payment Partner Offers";
+pay_des.style.marginLeft = "3%";
+
+let payment = document.createElement("div");
+document.querySelector("#container").append(payment);
+payment.id = "payment";
+
+let pay_div1 = document.createElement("div");
+payment.append(pay_div1);
+pay_div1.className = "pay_div";
+let des1 = document.createElement("h4");
+des1.innerText = "Get upto Rs1000 off!"
+let des2 = document.createElement("h4");
+des2.innerText ="Get upto Rs1000 off on your first in any category and in only online payment mode"
+pay_div1.append(des1, des2);
+
+let pay_div2 = document.createElement("div");
+payment.append(pay_div2);
+pay_div2.className = "pay_div";
+let des3 = document.createElement("h4");
+des3.innerText = "Get upto Rs1000 off!"
+let des4 = document.createElement("h4");
+des4.innerText ="Get upto Rs1000 off on your first in any category and in only online payment mode"
+pay_div2.append(des3, des4);
+
+
+
+</script>
