@@ -1,0 +1,52 @@
+{
+    "covid-essentials" : [{"image" : "wuba", 
+    "des" : "About the product",
+    "category" : "type of product",
+    "price" : 200,
+    "id" : 1}]
+}
+
+
+
+{
+    "image" : "https://www.netmeds.com/images/product-v1/600x600/958677/shake_handz_e_alcohol_hand_rub_with_flip_cap_500_ml_0_1.jpg", 
+    "des" : "Shake HandZ-E Alcohol Hand Rub With Flip Cap 500 ml",
+    "category" : "covid-essentials",
+    "price" :"Rs" 100,
+    "MRP" : "Rs" 250,
+    "discount" : "GET 60% off",
+    "id" : 1
+}
+
+
+{
+    "image" : "https://www.netmeds.com/images/product-v1/150x150/953905/shake_handz_e_hand_rub_5_litre_0_0.jpg", 
+    "des" : "Shake HandZ-E Alcohol Hand Rub 5 litre",
+    "category" : "covid-essentials",
+    "price" :"Rs" 575,
+    "MRP" : "Rs" 2500,
+    "discount" : "GET 77% off",
+    "id" : 2
+}
+
+
+{
+    "image" : "https://www.netmeds.com/images/product-v1/600x600/113653/revital_h_capsule_60s_37254_0_1.jpg", 
+    "des" : "Revital H Capsule 60'S",
+    "category" : "covid-essentials",
+    "price" :"Rs" 467.50,
+    "MRP" : "Rs" 550,
+    "discount" : "GET 15% off",
+    "id" : 3
+}
+
+{
+    "image" : "https://www.netmeds.com/images/product-v1/600x600/915906/maxirich_multivitamin_and_minerals_softgels_10s_0_0.jpg", 
+    "des" : "Maxirich Multivitamin and Minerals Softgels 10's",
+    "category" : "covid-essentials",
+    "price" :"Rs" 60,
+    "MRP" : "Rs" 110,
+    "discount" : "GET 45% off",
+    "id" : 4
+}
+

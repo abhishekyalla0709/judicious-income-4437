@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <style>
+      /* Write all necessery css here  */
+      #nav{
+            background-color: rgba(36,174,177);
+            height: auto;
+            border: 0px solid rgb(218, 32, 54);
+        }
+        .nav_subdiv{
+            width: auto;
+            border: 0px solid black;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+        }
+        #div1, #div2{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .nav_subdiv>img{
+            width: 20%;
+            padding-right: 5px;
+        }
+        .nav_subdiv>button, #div2>div>button{
+            background-color:  rgba(36,174,177);
+            border: 0px;
+            color: white;
+            font-size: medium;
+        }
+        .nav_subdiv>button:hover, #div2>div>button:hover{
+            cursor: pointer;
+        }
+
+        #signup{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+        }
+        #signup>form{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            padding: 20px;
+        }
+        #signup>form>input{
+            padding: 10px;
+            margin: 2px;
+        }
+        #button{
+            width: 100px;
+            text-align: center;
+            align-self: center  
+          }
+
+          a{
+            font-size: 25px;
+          }
+
+
+  </style>
+</head>
+
+<body>
+    <div id="container">
+
+  <div id="nav">
+  </div>
+  <div id="signup">
+    <h1>Please Enter Your Details</h1>
+    <form>
+      <input type="text" id="name" placeholder="enter a user name">
+      <input type="email" id="email" placeholder="enter your email id">
+      <input type="password"  id="password" placeholder="enter a password">
+      <input type="submit" id="button" value="Submit" />
+    </form>
+    <br><br>
+    <a href="./signin.html" style="margin-left: 0px">Signin</a>
+  </div>
+</div>
+</body>
+<script>
+
+let div1 = document.createElement("div");
+    document.querySelector("#nav").append(div1);
+    div1.id = "div1";
+
+    let logo = document.createElement("img");
+    logo.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    logo.setAttribute("alt", "company logo");
+    div1.append(logo);
+    logo.style.width = "5%";
+
+    let search = document.createElement("input");
+    search.style.width = "400px";
+    search.style.padding = "20px";
+    search.setAttribute("placeholder", "... Search for medicine and wellness products");
+    search.style.fontSize = "20px";
+    search.style.borderRadius = "5px";
+    div1.append(search);
+
+    let upload_div = document.createElement("div");
+    upload_div.className = "nav_subdiv";
+    let upload_img = document.createElement("img");
+    upload_img.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    let upload_button = document.createElement("button");
+    upload_button.innerText = "Upload";
+    upload_div.append(upload_img, upload_button);
+
+
+    let cart_div = document.createElement("div");
+    cart_div.className = "nav_subdiv";
+    let cart_img = document.createElement("img");
+    cart_img.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
+    let cart_button = document.createElement("button");
+    cart_button.innerText = "Cart";
+    cart_div.append(cart_img, cart_button);
+
+    div1.append(upload_div, cart_div);
+
+document.querySelector("form").addEventListener("submit", getdetails);
+
+  let account_data = JSON.parse(localStorage.getItem("account-data")) || [];
+  function getdetails(event){
+    //event.preventDefault();
+    let name = document.querySelector("#name").value;
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
+    let obj = {};
+    obj.name = name;
+    obj.email = email;
+    obj.password = password;
+    account_data.push(obj);
+    localStorage.setItem("account-data", JSON.stringify(account_data));
+  }
+
+
+</script>
+
+</html>
