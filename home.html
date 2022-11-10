@@ -8,9 +8,9 @@
     <title>Home Page</title>
     <style>
         #nav{
-            background-color: rgb(18, 211, 241);
+            background-color: rgba(36,174,177);
             height: auto;
-            border: 3px solid rgb(218, 32, 54);
+            border: 0px solid rgb(218, 32, 54);
         }
         .nav_subdiv{
             width: auto;
@@ -33,7 +33,7 @@
             padding-right: 5px;
         }
         .nav_subdiv>button, #div2>div>button{
-            background-color:  rgb(18, 211, 241);
+            background-color:  rgba(36,174,177);
             border: 0px;
             color: white;
             font-size: medium;
@@ -96,6 +96,17 @@
             width: 30%;
             margin-right: 20px;
         }
+        #bottom_div{
+            margin: 3%;
+        }
+        #bottom_div2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #bottom_div2>div{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 30%;
+        }
 
     </style>
 </head>
@@ -150,7 +161,11 @@
     let signin_img = document.createElement("img");
     signin_img.setAttribute("src", "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg");
     let signin_button = document.createElement("button");
-    signin_button.innerText = "Sign in / Sign up";
+    let link = document.createElement("a");
+    signin_button.append(link);
+    link.innerText = "Sign in / Sign up";
+    link.setAttribute("href", "./signup.html");
+
     signin_div.append(signin_img, signin_button);
     div1.append(upload_div, cart_div, signin_div);
 
@@ -253,6 +268,42 @@ des3.innerText = "Get upto Rs1000 off!"
 let des4 = document.createElement("h4");
 des4.innerText ="Get upto Rs1000 off on your first in any category and in only online payment mode"
 pay_div2.append(des3, des4);
+
+
+// creating bottom description part
+
+let bottom_div = document.createElement("div");
+document.querySelector("#container").append(bottom_div);
+bottom_div.id = "bottom_div";
+
+let bottom_div1 = document.createElement("div");
+bottom_div.append(bottom_div1);
+
+let des_h3 = document.createElement("h3");
+des_h3.innerText = "Take the Worry Out of Buying Medicines! Purchase Medicines Online Anytime, Anywhere!"
+let des_p = document.createElement("p");
+let des_str = "Get everything you need at Netmeds.com to take care of your health right from high-quality, affordable, authentic prescription medicines, Over-The-Counter pharmaceuticals products to general health care products, Ayurveda, Unani and Homeopathy medicines. <br/> <br/> Buy medicines online at Netmeds.com from the comfort of your home and we will take care of the rest! We will ensure that the life-saving drugs reach your doorstep without a hitch. Do away with the hassle of driving to the medical store, waiting in line, or even remembering your refills! Netmed.com will sort out those problems for you effectively so that you can lead a healthy and full life! <br/> <br/> Ordering medicines online at Netmeds.com is just a simple 4 step process. Browse through our wide range of health care products, add them to your cart, uploading your prescription (if required) and proceed to checkout! With Netmed.com, rest assured that your health will be in safe hands!"
+des_p.innerHTML = des_str;
+bottom_div1.append(des_h3, des_p);
+
+
+// creating bottom div part-2
+
+let bottom_div2 = document.createElement("div");
+bottom_div.append(bottom_div2);
+bottom_div2.id = "bottom_div2";
+let bot_arr = ["About net meds", "In the news", "carrers", "Investors"];
+for(let j = 0; j <= 2; j++){
+let bot_div = document.createElement("div");
+bottom_div2.append(bot_div);
+let list = document.createElement("ul");
+bot_div.append(list);
+for(let i = 0; i < bot_arr.length; i++){
+let list_item = document.createElement("li");
+list_item.innerText = bot_arr[i];
+list.append(list_item);
+}
+}
 
 
 
