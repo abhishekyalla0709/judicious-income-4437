@@ -1,52 +1,128 @@
-{
-    "covid-essentials" : [{"image" : "wuba", 
-    "des" : "About the product",
-    "category" : "type of product",
-    "price" : 200,
-    "id" : 1}]
-}
+[
+        {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/958677/shake_handz_e_alcohol_hand_rub_with_flip_cap_500_ml_0_1.jpg", 
+        "des" : "Shake HandZ-E Alcohol Hand Rub With Flip Cap 500 ml",
+        "category" : "covid-essentials",
+        "price" : 100,
+        "MRP" :  250,
+        "discount" : "GET 60% off",
+        "id" : 1
+    },
+
+    
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/113653/revital_h_capsule_60s_37254_0_1.jpg", 
+        "des" : "Revital H Capsule 60'S",
+        "category" : "covid-essentials",
+        "price" : 467.50,
+        "MRP" :  550,
+        "discount" : "GET 15% off",
+        "id" : 3
+    },
+    
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/915906/maxirich_multivitamin_and_minerals_softgels_10s_0_0.jpg", 
+        "des" : "Maxirich Multivitamin and Minerals Softgels 10's",
+        "category" : "covid-essentials",
+        "price" : 60,
+        "MRP" :  110,
+        "discount" : "GET 45% off",
+        "id" : 4
+    },
+
+
+        {
+        "image" : "https://www.netmeds.com/images/product-v1/150x150/826945/ensure_plus_nutritional_powder_vanilla_flavour_1_kg_pet_jar_124613_0_3.jpg", 
+        "des" : "Ensure Plus Nutritional Powder - Vanilla Flavour 1 Kg (Pet Jar)",
+        "category" : "Mom&Baby",
+        "price" : 1349,
+        "MRP" :  1420,
+        "discount" : "GET 5% off",
+        "id" : 5
+    },
+    
+    
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/113700/pro_pl_mother_s_health_drink_powder_chocolate_flavour_500_gm_pet_jar_0.jpg", 
+        "des" : "Pro PL Mother's Health Drink Powder - Chocolate Flavour 500 gm (Pet Jar)",
+        "category" : "Mom&Baby",
+        "price" : 576,
+        "MRP" :  640,
+        "discount" : "GET 10% off",
+        "id" : 6
+    },
+    
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/919000/primosa_1000_mg_capsules_15s_128728_0_1.jpg", 
+        "des" : "Primosa 1000 mg Capsules 15's",
+        "category" : "Mom&Baby",
+        "price" : 316,
+        "MRP" :  372,
+        "discount" : "GET 15% off",
+        "id" : 7
+    },
+    
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/404754/stayfree_secure_wings_xl_20_s_0.jpg", 
+        "des" : "Stayfree Secure Wings (XL) 20's",
+        "category" : "Mom&Baby",
+        "price" : 121,
+        "MRP" :  128,
+        "discount" : "GET 5% off",
+        "id" : 8
+    },
+
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/813646/nutrilite_salmon_omega_3_softgel_capsule_60s_0_0.jpg", 
+        "des" : "NUTRILITE SALMON OMEGA 3 SOFTGEL CAPSULE 60'S",
+        "category" : "nutrition",
+        "price" : 1365,
+        "MRP" :  1606,
+        "discount" : "GET 15% off",
+        "id" : 9
+    },
+
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/851151/ostocalcium_plus_chewable_tablet_30_s_0.jpg", 
+        "des" : "Ostocalcium Plus Chewable Tablet 30's",
+        "category" : "nutrition",
+        "price" : 167,
+        "MRP" :  196,
+        "discount" : "GET 16% off",
+        "id" : 10
+    },
+
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/954870/wellbeing_nutrition_melts_into_a_restful_sleep_oral_thin_strip_30s_0_0.jpg", 
+        "des" : "Wellbeing Nutrition Melts into a Restful Sleep Oral Thin Strip 30's",
+        "category" : "nutrition",
+        "price" : 500,
+        "MRP" :  1000,
+        "discount" : "GET 50% off",
+        "id" : 11
+    },
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/917465/wellman_hairfollic_tablet_30s_0_0.jpg", 
+        "des" : "Wellman HairFollic Tablet 30's",
+        "category" : "nutrition",
+        "price" : 800,
+        "MRP" :  1000,
+        "discount" : "GET 20% off",
+        "id" : 12
+    },
+    {
+        "image" : "https://www.netmeds.com/images/product-v1/600x600/966753/patanjali_nutrela_vitamin_b12_capsule_30s_0_0.jpg", 
+        "des" : "Patanjali Nutrela Vitamin B12 Capsule 30's",
+        "category" : "nutrition",
+        "price" : 200,
+        "MRP" :  300,
+        "discount" : "GET 33% off",
+        "id" : 13
+    }
 
 
 
-{
-    "image" : "https://www.netmeds.com/images/product-v1/600x600/958677/shake_handz_e_alcohol_hand_rub_with_flip_cap_500_ml_0_1.jpg", 
-    "des" : "Shake HandZ-E Alcohol Hand Rub With Flip Cap 500 ml",
-    "category" : "covid-essentials",
-    "price" :"Rs" 100,
-    "MRP" : "Rs" 250,
-    "discount" : "GET 60% off",
-    "id" : 1
-}
 
 
-{
-    "image" : "https://www.netmeds.com/images/product-v1/150x150/953905/shake_handz_e_hand_rub_5_litre_0_0.jpg", 
-    "des" : "Shake HandZ-E Alcohol Hand Rub 5 litre",
-    "category" : "covid-essentials",
-    "price" :"Rs" 575,
-    "MRP" : "Rs" 2500,
-    "discount" : "GET 77% off",
-    "id" : 2
-}
-
-
-{
-    "image" : "https://www.netmeds.com/images/product-v1/600x600/113653/revital_h_capsule_60s_37254_0_1.jpg", 
-    "des" : "Revital H Capsule 60'S",
-    "category" : "covid-essentials",
-    "price" :"Rs" 467.50,
-    "MRP" : "Rs" 550,
-    "discount" : "GET 15% off",
-    "id" : 3
-}
-
-{
-    "image" : "https://www.netmeds.com/images/product-v1/600x600/915906/maxirich_multivitamin_and_minerals_softgels_10s_0_0.jpg", 
-    "des" : "Maxirich Multivitamin and Minerals Softgels 10's",
-    "category" : "covid-essentials",
-    "price" :"Rs" 60,
-    "MRP" : "Rs" 110,
-    "discount" : "GET 45% off",
-    "id" : 4
-}
+]
 
